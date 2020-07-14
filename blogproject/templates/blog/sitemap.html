@@ -1,0 +1,35 @@
+{% extends "blog/base.html" %}
+{% load blog_extras %}
+
+{% block content %}
+        <div class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1>Sitemap &amp; Archives</h1>
+                        <!-- p class="lead">Default text for archives page title tagline</p -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="site-section">
+            <div class="container">
+                <div class="row">
+                    <div class="content col-lg-8">
+                        <div class="single-page clearfix">
+                            {% show_archives %}
+                        </div><!-- end single-page -->
+                    </div><!-- end content -->
+
+                    <div class="sidebar col-lg-4 d-none d-lg-block">
+                        {% show_recent_posts 5 %}
+                        {% show_categories %}
+                        {% show_tags %}
+                        {% show_advertise %}
+                    </div><!-- end sidebar -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+{% endblock content %}
+

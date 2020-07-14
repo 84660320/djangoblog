@@ -1,0 +1,24 @@
+<div class="widget clearfix d-none d-lg-block">
+    <div class="widget-title">
+        <h3><span>Category</span></h3>
+    </div><!-- end widget-title -->
+
+    <div class="category-widget">
+        <ul>
+            {% for category in category_list %}
+            <li>
+            <a href="{% url 'blog:category' category.pk %}">{{ category.name   }}<span>({{  category.count  }})</span></a>
+            </li>
+            {% empty %}
+            暂无分类!
+            {% endfor %}
+            <!--
+            <li><a href="#">LifeStyle (12)</a></li>
+            <li><a href="#">Travel (12)</a></li>
+            <li><a href="#">Fashion (12)</a></li>
+            <li><a href="#">Blogging (12)</a></li>
+            <li><a href="#">Marketing (12)</a></li>
+            -->
+        </ul>
+    </div><!-- end category -->
+</div><!-- end widget -->

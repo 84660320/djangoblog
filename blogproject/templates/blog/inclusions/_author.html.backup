@@ -1,0 +1,20 @@
+<div class="authorbox row">
+    <div class="col-md-3">
+        <img src="/static/images/insta_02.jpeg" alt="头像" class="rounded-circle img-fluid">
+    </div>
+    <div class="col-md-9">
+        <h4>About JT</h4>
+        <p>  混迹北京IT行业五年的老兵了，最初一年多时间做过基于PostgreSQL的二次开发，靠PostgreSQL DBA吃饭工作三年有余，
+        有空也写写Python代码，开发些运维工具&平台。工作之余喜欢和朋友爬爬山，吹吹牛。此网站目的是记录平时运维知识，以分享促进步。
+        记录工作笔记。好记性不如烂笔头。自已日拱一卒，进步每一天！若能帮助到阅读者，也是最大的喜悦。 赠人玫瑰,手有余香!
+        </p>
+
+        <div class="social">
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Facebook"><i class="fa fa-facebook"></i></a>              
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Pinterest"><i class="fa fa-pinterest"></i></a>
+        </div>
+    </div><!-- end col -->
+</div><!-- end row -->

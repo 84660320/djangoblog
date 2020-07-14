@@ -1,0 +1,30 @@
+<hr class="dashedhr">
+<div class="comments-wrapper">
+    <h3 class="custom-title">Leave a reply</h3>
+    <div class="form-wrapper">
+        <form class="row contact-form" action="{% url 'comments:comment' post.pk %}" method="post">
+            {% csrf_token %}
+            <div class="form-group col-lg-6">
+                <input type="text" name="name" class="form-control" placeholder="Your name" data-error="Name field is required" required>
+            </div>
+            <div class="form-group col-lg-6">
+                <input type="email" name="email" class="form-control" placeholder="Email address">
+            </div>
+            <div class="form-group col-lg-12">
+                <input type="text" name="url" class="form-control" placeholder="Website">
+            </div>
+            <div class="col-md-12">
+                {{ form.media }}
+                {{ form.text }}
+                <!--
+                <textarea class="form-control" name="text" placeholder="Your message.." data-error="Message field is required" required></textarea>
+                -->
+            </div>
+            <div class="form-group col-lg-12">
+                <button type="submit" class="item-btn">Submit Comment</button> 
+            </div>
+        </form>
+    </div>
+    <!-- end form -->
+</div><!-- end comment-wrapper -->
+

@@ -1,0 +1,29 @@
+<div class="comments-wrapper">
+    <h3 class="custom-title">{{ comment_list|length }} Comments</h3>
+    <div class="comments-list">
+        {% for comment in comment_list %}
+        {% ifequal loop.index comment_list|length %}
+        <div class="media last-child">
+        {% else %}
+        <div class="media">
+        {% endifequal %}
+            <a class="media-left" href="#">
+            {% if comment.media %}
+            <img src="{{ coment.media }}" alt="" class="rounded-circle">
+            {% else %} 
+            <img src="/static/images/people_12.jpg" alt="" class="rounded-circle">
+            {% endif %}
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading user_name">{{ comment.name }}<small>{{ comment.created_time }}</small></h4>
+                <div class="text">
+                    {{ comment.text|safe }}
+                </div>
+                <br>
+                <a href="#" class="btn btn-primary btn-sm">Reply</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div><!-- end comment-wrapper -->
+

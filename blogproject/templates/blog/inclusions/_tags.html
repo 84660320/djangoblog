@@ -1,0 +1,25 @@
+<div class="widget clearfix d-none d-lg-block">
+    <div class="widget-title">
+        <h3><span>Tag Cloud</span></h3>
+    </div><!-- end widget-title -->
+
+    <div class="tag-widget">
+        {% for tag in tag_list %}
+        <a href="{% url 'blog:tag' tag.pk %}">{{ tag.name  }} <span class="post-count">({{ tag.num_posts  }})</a>
+        {% empty %}
+        暂无标签！
+        {% endfor %}
+        <!--
+        <a href="#">design</a>
+        <a href="#">art</a>
+        <a href="#">gallery</a>
+        <a href="#">fashion</a>
+        <a href="#">modern</a>
+        <a href="#">creative</a>
+        <a href="#">respo</a>
+        <a href="#">antica</a>
+        <a href="#">mobsen</a>
+        <a href="#">green</a>
+        -->
+    </div><!-- end tag-widget -->
+</div><!-- end widget -->

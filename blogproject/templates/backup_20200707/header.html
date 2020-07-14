@@ -1,0 +1,490 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+     <title>Black &amp; White</title>
+    <!-- meta -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="{i % static 'blog/css/bootstrap.min.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'blog/css/pace.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/custom.css' %}">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/static/img/favicon.png">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="http://cdn.bootstrapmb.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="/static/css/fontawesome-all.min.css">
+    <!-- Flat Icon CSS -->
+    <link rel="stylesheet" href="/static/font/flaticon.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="/static/css/meanmenu.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="/static/vendor/OwlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="/static/vendor/OwlCarousel/owl.theme.default.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Modernize js -->
+    <script src="/static/js/modernizr-3.6.0.min.js"></script>
+<style>
+    .codehilite {
+      padding: 0;
+    }
+ 
+    /* for block of numbers */
+    .hljs-ln-numbers {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+ 
+      text-align: center;
+      color: #ccc;
+      border-right: 1px solid #CCC;
+      vertical-align: top;
+      padding-right: 5px;
+    }
+ 
+    .hljs-ln-n {
+      width: 30px;
+    }
+ 
+    /* for block of code */
+    .hljs-ln .hljs-ln-code {
+      padding-left: 10px;
+      white-space: pre;
+    }
+  </style>
+            <!-- js -->
+            <script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.min.js"></script>
+            <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="{% static 'blog/js/pace.min.js' %}"></script>
+            <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+        </head>
+
+<body class="sticky-header">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+    <!-- ScrollUp Start Here -->
+    <a href="#wrapper" data-type="section-switch" class="scrollup">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+    <!-- ScrollUp End Here -->
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper">
+        <header class="has-mobile-menu">
+            <div id="rt-sticky-placeholder"></div>
+            <div id="header-menu" class="header-menu menu-layout2 bg--dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav id="dropdown" class="template-main-menu">
+                                <ul>
+                                    <li class="hide-on-mobile-menu">
+                                        <a href="#">HOME</a>
+                                        <ul class="dropdown-menu-col-2">
+                                            <li>
+                                                <a href="{% url 'blog:index' tag=1 %}">Home 1</a>
+                                                <a href="{% url 'blog:index' tag=2 %}">Home 2</a>
+                                                <a href="{% url 'blog:index' tag=3 %}">Home 3</a>
+                                                <a href="{% url 'blog:index' tag=4 %}">Home 4</a>
+                                                <a href="{% url 'blog:index' tag=5 %}">Home 5</a>
+                                                <a href="{% url 'blog:index' tag=6 %}">Home 6</a>
+                                                <a href="{% url 'blog:index' tag=7 %}">Home 7</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:index' tag=8 %}">Home 8</a>
+                                                <a href="{% url 'blog:index' tag=9 %}">Home 9</a>
+                                                <a href="{% url 'blog:index' tag=10 %}">Home 10</a>
+                                                <a href="{% url 'blog:index' tag=11 %}">Home 11</a>
+                                                <a href="{% url 'blog:index' tag=12 %}">Home 12</a>
+                                                <a href="{% url 'blog:index' tag=13 %}">Home 13</a>
+                                                <a href="{% url 'blog:coming_soon' %}">Coming Soon</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="hide-on-desktop-menu">
+                                        <a href="#">HOME</a>
+                                        <ul class="dropdown-menu-col-2">
+                                            <li><a href="{% url 'blog:index' tag=1 %}">Home 1</a></li>
+                                            <li><a href="{% url 'blog:index' tag=2 %}">Home 2</a></li>
+                                            <li><a href="{% url 'blog:index' tag=3 %}">Home 3</a></li>
+                                            <li><a href="{% url 'blog:index' tag=4 %}">Home 4</a></li>
+                                            <li><a href="{% url 'blog:index' tag=5 %}">Home 5</a></li>
+                                            <li><a href="{% url 'blog:index' tag=6 %}">Home 6</a></li>
+                                            <li><a href="{% url 'blog:index' tag=7 %}">Home 7</a></li>
+                                            <li><a href="{% url 'blog:index' tag=8 %}">Home 8</a></li>
+                                            <li><a href="{% url 'blog:index' tag=9 %}">Home 9</a></li>
+                                            <li><a href="{% url 'blog:index' tag=10 %}">Home 10</a></li>
+                                            <li><a href="{% url 'blog:index' tag=11 %}">Home 11</a></li>
+                                            <li><a href="{% url 'blog:index' tag=12 %}">Home 12</a></li>
+                                            <li><a href="{% url 'blog:index' tag=13 %}">Home 13</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'blog:about' %}">ABOUT</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">CATEGORIES</a>
+                                        <ul class="dropdown-menu-col-1">
+                                            <li>
+                                                <a href="{% url 'blog:blog_category' tag=1 %}">Blog Category 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:blog_category' tag=2 %}">Blog Category 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:blog_category' tag=3 %}">Blog Category 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:blog_category' tag=4 %}">Blog Category 4</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                    <a href="{% url 'blog:blog' %}">BLOG</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Details</a>
+                                        <ul class="dropdown-menu-col-1">
+                                            <li>
+                                                <a href="{% url 'blog:single_blog' tag=1 %}">Blog Details 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:single_blog' tag=2 %}">Blog Details 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:single_blog' tag=3 %}">Blog Details 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="possition-static hide-on-mobile-menu">
+                                        <a href="#">PAGES</a>
+                                        <div class="template-mega-menu">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <div class="menu-ctg-title">Home</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=1 %}">
+                                                                    <i class="fas fa-home"></i>Home 1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=2 %}">
+                                                                    <i class="fas fa-home"></i>Home 2</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=3 %}">
+                                                                    <i class="fas fa-home"></i>Home 3</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=4 %}">
+                                                                    <i class="fas fa-home"></i>Home 4</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=5 %}">
+                                                                    <i class="fas fa-home"></i>Home 5</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="menu-ctg-title">Home</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=6 %}">
+                                                                    <i class="fas fa-home"></i>Home 6</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=7 %}">
+                                                                    <i class="fas fa-home"></i>Home 7</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=8 %}">
+                                                                    <i class="fas fa-home"></i>Home 8</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=9 %}">
+                                                                    <i class="fas fa-home"></i>Home 9</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=10 %}">
+                                                                    <i class="fas fa-home"></i>Home 10</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="menu-ctg-title">Home</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=11 %}">
+                                                                    <i class="fas fa-home"></i>Home 11</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=12 %}">
+                                                                    <i class="fas fa-home"></i>Home 12</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="{% url 'blog:index' tag=13 %}">
+                                                                    <i class="fas fa-home"></i>Home 13</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="menu-ctg-title">ARCHIVES</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:archives' tag=1 %}">
+                                                                    <i class="fab fa-cloudversify"></i>Archive 1</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="menu-ctg-title">ARCHIVES</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:archives' tag=2 %}">
+                                                                    <i class="fab fa-cloudversify"></i>Archive 2</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="menu-ctg-title">AUTHORS</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                                <a href="{% url 'blog:authors' %}">
+                                                                    <i class="fas fa-users"></i>Authors</a>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="menu-ctg-title">PAGES</div>
+                                                        <ul class="sub-menu">
+                                                            <li>
+                                                            <a href="{% url 'blog:404' %}">
+                                                                    <i class="fas fa-user-secret"></i>404 Error</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="hide-on-desktop-menu">
+                                        <a href="#">Pages</a>
+                                        <ul>
+                                            <li>
+                                                <a href="{% url 'blog:about' %}">About 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:blog_category' tag=1 %}">Blog Category 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:single_blog' tag=1 %}">Blog Details 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:archives' tag=1 %}">Archives 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="404">404 Error</a>
+                                            </li>
+                                            <li>
+                                                <a href="{% url 'blog:contact' %}">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'blog:contact' %}">CONTACT</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt--29 pb--29 bg--light border-bootom border-color-accent2">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-4">
+                            <div class="header-action-items">
+                                <ul>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fas fa-rss"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li class="item-social-layout2"> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center">
+                            <div class="logo-area">
+                                <a href="{% url 'blog:index' tag=1 %}" class="temp-logo" id="temp-logo">
+                                    <img src="/static/img/bw4.png" alt="logo" class="img-fluid">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-end">
+                            <div class="header-action-items">
+                                <ul>
+                                    <li class="header-search-box divider-style-border">
+                                        <a href="#header-search" title="Search">
+                                            <i class="flaticon-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                    <li class="cart-wrap divider-style-border">
+                                        <div class="cart-info">
+                                            <i class="flaticon-shopping-bag"></i>
+                                            <div class="cart-amount">0</div>
+                                        </div>
+                                        <div class="cart-items">
+                                            <div class="cart-item">
+                                                <div class="cart-img">
+                                                    <a href="#">
+                                                        <img src="/static/img/product/top-product1.jpg" alt="product" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="cart-title">
+                                                    <a href="#">Pressure</a>
+                                                    <span>Code: STPT601</span>
+                                                </div>
+                                                <div class="cart-quantity">X 1</div>
+                                                <div class="cart-price">$249</div>
+                                                <div class="cart-trash">
+                                                    <a href="#">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-img">
+                                                    <a href="#">
+                                                        <img src="/static/img/product/top-product2.jpg" alt="product" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="cart-title">
+                                                    <a href="#">Stethoscope</a>
+                                                    <span>Code: STPT602</span>
+                                                </div>
+                                                <div class="cart-quantity">X 1</div>
+                                                <div class="cart-price">$189</div>
+                                                <div class="cart-trash">
+                                                    <a href="#">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-img">
+                                                    <a href="#">
+                                                        <img src="/static/img/product/top-product3.jpg" alt="product" class="img-fluid">
+                                                    </a>
+                                                </div>
+                                                <div class="cart-title">
+                                                    <a href="#">Microscope</a>
+                                                    <span>Code: STPT603</span>
+                                                </div>
+                                                <div class="cart-quantity">X 2</div>
+                                                <div class="cart-price">$379</div>
+                                                <div class="cart-trash">
+                                                    <a href="#">
+                                                        <i class="far fa-trash-alt"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="cart-item">
+                                                <div class="cart-btn">
+                                                    <a href="#" class="item-btn">View Cart</a>
+                                                    <a href="#" class="item-btn">Checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        {% if messages %}
+           {% for message in messages %}
+             <div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+                       aria-hidden="true">&times;</span></button>
+               {{ message }}
+             </div>
+           {% endfor %}
+        {% endif %}
+
+                {% block main %}
+                {% endblock main %}
+ 
+        <!-- Footer Area Start Here -->
+        <footer class="footer-wrap-layout2">
+            <div class="container">
+                <div class="footer-box-layout2">
+                    <div class="footer-logo">
+                        <a href="{% url 'blog:index' tag=1 %}"><img src="/static/img/bw3.png" alt="logo"></a>
+                    </div>
+                    <ul class="footer-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i>259k LIKES</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>480k FOLLOWERS</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>280k FOLLOWERS</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i>180k SUBSCRIBER</a></li>
+                    </ul>
+                    <div class="copyrights">Collect from <a href="http://www.bootstrapmb.com/">网页模板</a></div>
+                    <div class="copyright">© 2019 JT. All Rights <a href="http://www.jtblog.com/" title="bootstrapmb">Reserved</a>.</div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area End Here -->
+        <!-- Search Box Start Here -->
+        <div id="header-search" class="header-search">
+            <button type="button" class="close">×</button>
+            <form class="header-search-form" method="get" id="searchform" action="{% url 'blog:search' %}">
+                <input type="search" name="q" value="" placeholder="Type here........" required>
+                <button type="submit" class="search-btn">
+                    <i class="flaticon-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- Search Box End Here -->
+    </div>
+<script src="{% static 'blog/js/script.js' %}"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+  hljs.initLineNumbersOnLoad();
+</script>
+<!-- jquery-->
+<script src="/static/js/jquery-3.3.1.min.js"></script>
+<!-- Plugins js -->
+<script src="/static/js/plugins.js"></script>
+<!-- Popper js -->
+<script src="/static/js/popper.min.js"></script>
+<!-- Bootstrap js -->
+<script src="http://cdn.bootstrapmb.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- Owl Carousel js -->
+<script src="/static/vendor/OwlCarousel/owl.carousel.min.js"></script>
+<!-- Meanmenu js -->
+<script src="/static/js/jquery.meanmenu.min.js"></script>
+<!-- Smooth Scroll js -->
+<script src="/static/js/jquery.smoothscroll.min.js"></script>
+<!-- Main js -->
+<script src="/static/js/main.js"></script>
+</body>
+</html>

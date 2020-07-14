@@ -1,0 +1,12 @@
+<div class="widget clearfix d-none d-lg-block">
+    <div class="widget-title">
+        <h3><span>Site Search</span></h3>
+    </div><!-- end widget-title -->
+
+    <form class="form-inline search-form" method="get" id="searchform" action="{% url 'blog:search' %}">
+        <div class="form-group">
+            <input type="search" class="form-control" name="q" value="" placeholder="Type here........" required>
+        </div>
+        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+    </form>
+</div><!-- end widget -->

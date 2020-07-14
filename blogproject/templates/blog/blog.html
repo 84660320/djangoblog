@@ -1,0 +1,119 @@
+{% extends "blog/base.html" %}
+{% load blog_extras %}
+        
+{% block content %}
+<div class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Author by: JT</h1>
+                <p class="lead">All articles &amp; tips shared by this author</p>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="sidebar col-lg-4">
+                {% show_search %}
+                {% show_recent_posts 5 %}
+                {% show_categories %}
+                {% show_tags %}
+                {% show_advertise %}
+                {% show_instagram %}
+            </div><!-- end sidebar -->
+            <div class="content col-lg-8">
+                {% for post in post_list %}
+                <div class="blog-box clearfix">
+                    {% if post.media %}
+                    <div class="blog-media">
+                        <a href="{{ post.get_absolute_url }}" title=""><img src="{{ post.media }}" alt="" class="img-fluid"></a>
+                    </div>
+                    <!-- end blog-media -->
+                    {% endif %}
+                    <div class="blog-desc text-center">
+                        <span class="cat-title">{{ post.category.name }}</span>
+                        <h4><a href="{{ post.get_absolute_url }}" title="">{{ post.title }}</a></h4>
+                        <div class="blog-meta">
+                            <span>Posted on</span> {{ post.created_time }} &nbsp;-&nbsp;<span>By</span> <a href="#">{{ post.author }}</a>&nbsp;-&nbsp;<a href="#">{{ post.comment_set.count }} Comments</a>
+                        </div>
+                        <!-- end meta -->
+                        <p>{{ post.excerpt }}...</p>
+
+                        <div class="blog-bottom text-center">
+                            <a href="{{ post.get_absolute_url }}" class="btn btn-primary">Continue Reading</a>
+                        </div><!-- end bottom -->
+
+                        <div class="blog-social">
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Facebook">
+                                <div class="socibox">
+                                    <span class="fa fa-facebook"></span>
+                                </div>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Twitter">
+                                <div class="socibox">
+                                    <span class="fa fa-twitter"></span>
+                                </div>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Instagram">
+                                <div class="socibox">
+                                    <span class="fa fa-instagram"></span>
+                                </div>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Google Plus">
+                                <div class="socibox">
+                                    <span class="fa fa-google-plus"></span>
+                                </div>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Pinterest">
+                                <div class="socibox">
+                                    <span class="fa fa-pinterest"></span>
+                                </div>
+                            </a>
+                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Share on Linkedin">
+                                <div class="socibox">
+                                    <span class="fa fa-linkedin"></span>
+                                </div>
+                            </a>
+                            <hr>
+                        </div><!-- end blog-social -->
+                    </div><!-- end desc -->
+                </div><!-- end blog-box -->
+                {% empty %}
+                <div class="no-post">暂时还没有发布的文章！</div>
+                {% endfor %}
+
+                {% if is_paginated %}
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                {% if page_obj.has_previous %}
+                                <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Prev</a></li>
+                                {% endif %}
+                                {% for page in page_obj.pages %}
+                                {% if page %}
+                                    {% ifequal page page_obj.number %}
+                                    <li class="page-item current"><a class="page-link" href="#" style="color: #0a6aa1">{{ page }}</a></li>
+                                    {% else %}
+                                    <li class="page-item"><a class="page-link" href="?page={{ page }}">{{ page }}</a></li>
+                                    {% endifequal %}
+                                {% else %}
+                                    <li class="page-item"><a href="#" class="page-link">...</a></li>
+                                {% endif %}
+
+                                {% endfor %}
+                                {% if page_obj.has_next %}
+                                <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a></li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                {% endif %}
+            </div><!-- end content -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end section -->
+{% endblock content %}

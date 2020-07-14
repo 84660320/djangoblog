@@ -1,0 +1,99 @@
+{% extends "blog/base.html" %}
+{% load blog_extras %}
+{% load comments_extras %}
+
+{% block content %}
+<div class="page-title d-none d-lg-block d-xl-none">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-xs-12">
+                <h1>Blog</h1>
+                <p class="lead">{{ post.title }}</p>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <ol class="breadcrumb text-right">
+                    <li class="breadcrumb-item"><a href="#">JT</a></li>
+                    <li class="breadcrumb-item active">Blog</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-{{ message.tags }} alert-dismissible" role="alert">
+<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span
+    aria-hidden="true">&times;</span></button>
+    {{ message }}
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- 
+<link rel="stylesheet" href="/static/css/github.css">
+-->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css" 
+
+<section class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="content col-lg-8">
+                <div class="single-page clearfix">
+                    <div class="blog-media">
+                        <img src="{{ post.media }}" alt="" class="img-fluid">
+                    </div>
+                    <!-- end blog-media -->
+                    <div class="blog-desc text-center">
+                        <span class="cat-title">{{ post.category.name }}</span>
+                        <h4>{{ post.title }}</h4>
+                        <div class="blog-meta">
+                            <span>Posted on</span> {{ post.created_time }} &nbsp;-&nbsp;<span>By</span> <a href="#">{{ post.author }}</a>&nbsp;-&nbsp;<a href="#">{{ post.comment_set.count }} Comments</a>
+                        </div>
+                        <!-- end meta -->
+                    </div>
+
+                     <div class="entry-content clearfix">
+                            {{ post.body|safe }}
+                    </div>
+
+                    <hr class="dashedhr">
+                    <!-- hr class="dashedhr"-->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="banner-widget-fluid">
+                                <a href="#"><img src="/static/images/banner_01.jpg" alt="" class="img-fluid"></a>
+                            </div><!-- end banner -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                    {% show_comments post %}
+                    {% show_comment_form post %}
+                </div><!-- end single-page -->
+            </div><!-- end content -->
+
+            <div class="sidebar col-lg-4 d-none d-lg-block">
+                {% show_search %}
+                <div class="widget clearfix d-none d-lg-block">
+                    <div class="widget-title">
+                        <h3><span>Toc</span></h3>
+                    </div><!-- end widget-title -->
+                    {{ post.toc|safe }}
+                </div><!-- end widget -->
+                <!--
+                { % show_advertise %}
+                { % show_instagram %}
+                -->
+                {% show_categories %}
+                {% show_recent_posts 5 %}
+                {% show_tags %}
+            </div><!-- end sidebar -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</section><!-- end section -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock content %}
