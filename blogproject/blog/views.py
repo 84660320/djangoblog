@@ -60,12 +60,12 @@ class PostDetailView(DetailView):
         # 覆写 get_object 方法的目的是因为需要对 post 的 body 值进行渲染
         post = super(PostDetailView, self).get_object(queryset=None)
         md = markdown.Markdown(extensions=[
-            'markdown.extensions.extra',
-            'markdown.extensions.codehilite',
+            #'markdown.extensions.extra',
+            #'markdown.extensions.codehilite',
             # 记得在顶部引入 TocExtension 和 slugify
             TocExtension(slugify=slugify),
         ])
-        post.body = md.convert(post.body)
+        md.convert(post.body)
         m = re.search(r'<div class="toc">\s*<ul>(.*)</ul>\s*</div>', md.toc, re.S)
         post.toc = m.group(1) if m is not None else ''
         return post

@@ -1,4 +1,5 @@
 {% extends "blog/base.html" %}
+{% load static %}
 {% load blog_extras %}
 {% load comments_extras %}
 
@@ -31,43 +32,7 @@
 {% endfor %}
 {% endif %}
 
-<!-- 
-<link rel="stylesheet" href="/static/css/github.css">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
--->
-<link href="/static/css/github.min.css" rel="stylesheet">
-<style>
-    .codehilite {
-      padding: 0;
-    }
-
-    /* for block of numbers */
-    .hljs-ln-numbers {
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-
-      text-align: center;
-      color: #ccc;
-      border-right: 1px solid #CCC;
-      vertical-align: top;
-      padding-right: 5px;
-    }
-
-    .hljs-ln-n {
-      width: 30px;
-    }
-
-    /* for block of code */
-    .hljs-ln .hljs-ln-code {
-      padding-left: 10px;
-      white-space: pre;
-    }
-</style>
-
+<link rel="stylesheet" href="{% static "mdeditor/css/editormd.preview.css" %}"/>
 <section class="site-section">
     <div class="container">
         <div class="row">
@@ -80,7 +45,6 @@
                     <!-- end blog-media -->
                     {% endif %}
                     <div class="blog-desc text-center">
-                        <span class="cat-title">{{ post.category.name }}</span>
                         <h4>{{ post.title }}</h4>
                         <div class="blog-meta">
                             <span>发表于</span> {{ post.created_time }}
@@ -91,8 +55,8 @@
                         <!-- end meta -->
                     </div>
 
-                     <div class="entry-content clearfix">
-                            {{ post.body|safe }}
+                    <div id="editormd-view" class="entry-content clearfix">
+                        <textarea name="test-editormd-markdown-doc">{{ post.body }}</textarea>
                     </div>
 
                     <hr class="dashedhr">
@@ -128,10 +92,31 @@
     </div><!-- end container -->
 </section><!-- end section -->
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
-<script>
-    hljs.initHighlightingOnLoad();
-    hljs.initLineNumbersOnLoad();
+<script src="{% static "mdeditor/js/jquery.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/marked.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/prettify.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/raphael.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/underscore.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/sequence-diagram.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/flowchart.min.js" %}"></script>
+<script src="{% static "mdeditor/js/lib/jquery.flowchart.min.js" %}"></script>
+<script src="{% static "mdeditor/js/editormd.js" %}"></script>
+<script type="text/javascript">
+    EditormdView = editormd.markdownToHTML("editormd-view", {
+        htmlDecode      : "style,script,iframe",  // you can filter tags decode
+        saveHTMLToTextarea : true,    // 保存 HTML 到 Textarea
+        path            : '../lib/',
+        theme           : "dark",
+        searchReplace   : true,
+        emoji           : true,
+        taskList        : true,
+        tocm            : true,
+        tex             : true,  // 默认不解析
+        flowChart       : true,  // 默认不解析
+        sequenceDiagram : true,  // 默认不解析
+        codeFold        : true,
+        //imageUpload     : true,
+        //imageFormats    : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+    });
 </script>
 {% endblock content %}

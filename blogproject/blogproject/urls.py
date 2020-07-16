@@ -28,6 +28,7 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
     url(r'^comments/', include('django_comments.urls')),
+    url(r'mdeditor/', include('mdeditor.urls')),
 ]
 
 if not settings.DEBUG:

@@ -19,7 +19,7 @@ urlpatterns = [
     url(r'^about$', views.about, name='about'),
     url(r'^search$', views.SearchView.as_view(), name='search'),
     path(r'contact', views.contact, name='contact'),
-    url('increase-likes/<int:pk>/', views.IncreaseLikesView.as_view(), name='increase_likes')
+    url('increase-likes/<int:pk>/', views.IncreaseLikesView.as_view(), name='increase_likes'),
 ]
 
 """

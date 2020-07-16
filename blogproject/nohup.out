@@ -3303,3 +3303,271 @@ ConnectionResetError: [Errno 104] Connection reset by peer
 [16/Jul/2020 10:41:25] "POST /admin/blog/post/20/change/ HTTP/1.1" 302 0
 [16/Jul/2020 10:41:25] "GET /admin/blog/post/ HTTP/1.1" 200 12380
 [16/Jul/2020 10:41:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:46:46] "GET /static/css/style.css HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /post/20/ HTTP/1.1" 200 53084
+[16/Jul/2020 10:46:47] "GET /static/css/animate.css HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /static/css/github.min.css HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /static/font-awesome-4.7.0/css/font-awesome.css HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /static/css/fonts.css?family=Work+Sans:300,400,500,700 HTTP/1.1" 200 5295
+[16/Jul/2020 10:46:47] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:47] "GET /static/js/tether.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/images/loader.gif HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/css/main.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:48] "GET /static/images/banner_01.jpg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/insta_05.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/insta_02.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/insta_06.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/insta_03.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/banner.jpg HTTP/1.1" 200 28205
+[16/Jul/2020 10:46:50] "GET /static/images/insta_01.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:50] "GET /static/images/insta_04.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:51] "GET /static/images/insta_07.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:51] "GET /static/images/insta_08.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:51] "GET /static/images/insta_09.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:46:51] "GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:46:52] "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+[16/Jul/2020 10:46:52] "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:47:04] "GET /admin/blog/post/20/change/ HTTP/1.1" 200 17320
+[16/Jul/2020 10:47:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:47:31] "POST /admin/blog/post/20/change/ HTTP/1.1" 302 0
+[16/Jul/2020 10:47:32] "GET /admin/blog/post/ HTTP/1.1" 200 12380
+[16/Jul/2020 10:47:32] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6190
+[16/Jul/2020 10:47:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:47:35] "GET /admin/blog/post/8/change/ HTTP/1.1" 200 40390
+[16/Jul/2020 10:47:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:47:45] "GET /admin/blog/post/ HTTP/1.1" 200 12181
+[16/Jul/2020 10:56:44] "GET /admin/blog/post/2/change/ HTTP/1.1" 200 13655
+[16/Jul/2020 10:56:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:56:48] "GET /blog HTTP/1.1" 200 49740
+[16/Jul/2020 10:56:56] "POST /admin/blog/post/2/change/ HTTP/1.1" 302 0
+[16/Jul/2020 10:56:56] "GET /admin/blog/post/ HTTP/1.1" 200 12371
+[16/Jul/2020 10:56:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:57:06] "GET /category/11/ HTTP/1.1" 200 35441
+[16/Jul/2020 10:57:15] "GET /admin/blog/post/19/change/ HTTP/1.1" 200 15709
+[16/Jul/2020 10:57:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:57:21] "GET /post/2/ HTTP/1.1" 200 43118
+[16/Jul/2020 10:57:23] "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 200 1220
+[16/Jul/2020 10:57:23] "GET /static/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png HTTP/1.1" 200 1132
+[16/Jul/2020 10:57:23] "GET /static/images/people_12.jpg HTTP/1.1" 304 0
+[16/Jul/2020 10:57:24] "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 200 1183
+[16/Jul/2020 10:57:28] "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 200 1115
+[16/Jul/2020 10:57:31] "POST /admin/blog/post/19/change/ HTTP/1.1" 302 0
+[16/Jul/2020 10:57:31] "GET /admin/blog/post/ HTTP/1.1" 200 12390
+[16/Jul/2020 10:57:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:57:49] "GET /post/2/ HTTP/1.1" 200 42890
+[16/Jul/2020 10:58:27] "GET /post/2/ HTTP/1.1" 200 42890
+[16/Jul/2020 10:58:27] "GET /static/css/fonts.css?family=Work+Sans:300,400,500,700 HTTP/1.1" 200 5295
+[16/Jul/2020 10:58:29] "GET /static/images/insta_02.jpeg HTTP/1.1" 200 36864
+[16/Jul/2020 10:58:29] "GET /static/images/apple-touch-icon.png HTTP/1.1" 200 3471
+[16/Jul/2020 10:58:36] "GET /admin/blog/post/19/change/ HTTP/1.1" 200 15709
+[16/Jul/2020 10:58:36] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 495
+[16/Jul/2020 10:58:36] "GET /static/admin/js/change_form.js HTTP/1.1" 200 712
+[16/Jul/2020 10:58:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:58:45] "GET /admin/blog/post/ HTTP/1.1" 200 12182
+[16/Jul/2020 10:58:48] "GET /admin/blog/post/2/change/ HTTP/1.1" 200 13762
+[16/Jul/2020 10:58:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:59:03] "POST /admin/blog/post/2/change/ HTTP/1.1" 302 0
+[16/Jul/2020 10:59:04] "GET /admin/blog/post/ HTTP/1.1" 200 12371
+[16/Jul/2020 10:59:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3223
+[16/Jul/2020 10:59:09] "GET /post/2/ HTTP/1.1" 200 42890
+[16/Jul/2020 10:59:09] "GET /static/font-awesome-4.7.0/css/font-awesome.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:10] "GET /static/css/github.min.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:10] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:10] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:10] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:10] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:11] "GET /static/js/tether.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:11] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:11] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:12] "GET /static/css/style.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:13] "GET /static/css/fonts.css?family=Work+Sans:300,400,500,700 HTTP/1.1" 304 0
+[16/Jul/2020 10:59:14] "GET /static/css/main.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:20] "GET /static/css/animate.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/images/banner_01.jpg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/images/people_12.jpg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 200 1220
+[16/Jul/2020 10:59:21] "GET /static/images/loader.gif HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png HTTP/1.1" 200 1132
+[16/Jul/2020 10:59:21] "GET /static/images/insta_02.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 10:59:21] "GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:22] "GET /static/images/insta_03.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:22] "GET /static/images/insta_05.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:22] "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 10:59:22] "GET /static/images/banner.jpg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:22] "GET /static/images/insta_01.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:23] "GET /static/images/insta_04.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:24] "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:24] "GET /static/ckeditor/ckeditor/lang/en.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:24] "GET /static/images/insta_08.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:24] "GET /static/images/insta_09.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:24] "GET /static/images/insta_06.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:25] "GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:25] "GET /static/ckeditor/ckeditor/plugins/prism/plugin.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:25] "GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:25] "GET /static/images/insta_07.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/en.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 304 0
+[16/Jul/2020 10:59:26] "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+[16/Jul/2020 10:59:27] "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:27] "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:27] "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+[16/Jul/2020 10:59:27] "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 10:59:41] "GET /post/2/ HTTP/1.1" 200 42890
+[16/Jul/2020 10:59:42] "GET /static/css/animate.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:42] "GET /static/css/fonts.css?family=Work+Sans:300,400,500,700 HTTP/1.1" 304 0
+[16/Jul/2020 10:59:42] "GET /static/css/style.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:42] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:42] "GET /static/font-awesome-4.7.0/css/font-awesome.css HTTP/1.1" 304 0
+[16/Jul/2020 10:59:42] "GET /static/images/loader.gif HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/css/github.min.css HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/css/main.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:01] "GET /static/js/tether.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:02] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[16/Jul/2020 11:00:02] "GET /static/images/banner_01.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:02] "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:00:02] "GET /static/images/banner.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:02] "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:00:03] "GET /static/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:00:03] "GET /static/images/insta_01.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:04] "GET /static/images/insta_03.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:04] "GET /static/images/insta_04.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:04] "GET /static/images/insta_02.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:04] "GET /static/images/insta_06.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:04] "GET /static/images/people_12.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:05] "GET /static/images/insta_05.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:05] "GET /static/images/insta_07.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:05] "GET /static/images/insta_09.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:05] "GET /static/images/insta_08.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:00:08] "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:00:08] "GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:00:09] "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:00:12] "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+/opt/djangoblog/blogproject/blog/views.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 15, 2020 - 15:50:23
+Django version 3.0.7, using settings 'blogproject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+[16/Jul/2020 11:01:12] "GET /post/2/ HTTP/1.1" 200 42890
+[16/Jul/2020 11:01:13] "GET /static/css/fonts.css?family=Work+Sans:300,400,500,700 HTTP/1.1" 304 0
+[16/Jul/2020 11:01:13] "GET /static/css/animate.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:13] "GET /static/ckeditor/ckeditor-init.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:14] "GET /static/css/github.min.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:14] "GET /static/font-awesome-4.7.0/css/font-awesome.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:14] "GET /static/ckeditor/ckeditor/ckeditor.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:15] "GET /static/js/custom.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:15] "GET /static/js/bootstrap.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:15] "GET /static/css/main.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:16] "GET /static/css/style.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:16] "GET /static/js/tether.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:16] "GET /static/css/bootstrap.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:17] "GET /static/ckeditor/ckeditor/plugins/smiley/images/devil_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:01:17] "GET /static/ckeditor/ckeditor/plugins/smiley/images/teeth_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:01:17] "GET /static/images/people_12.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:17] "GET /static/images/loader.gif HTTP/1.1" 304 0
+[16/Jul/2020 11:01:17] "GET /static/ckeditor/ckeditor/plugins/smiley/images/tongue_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/js/jquery.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/ckeditor/ckeditor/plugins/smiley/images/sad_smile.png HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/images/insta_01.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/images/insta_02.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/ckeditor/ckeditor/config.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:18] "GET /static/images/insta_04.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:19] "GET /static/images/insta_03.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:19] "GET /static/images/insta_05.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:19] "GET /static/images/banner.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:19] "GET /static/images/insta_06.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:19] "GET /static/images/insta_07.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:20] "GET /static/images/insta_09.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:20] "GET /static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:20] "GET /static/ckeditor/ckeditor/lang/en.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:21] "GET /static/images/insta_08.jpeg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:21] "GET /static/ckeditor/ckeditor/styles.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:21] "GET /static/ckeditor/ckeditor/plugins/codesnippet/plugin.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:21] "GET /static/ckeditor/ckeditor/plugins/prism/plugin.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:22] "GET /static/images/banner_01.jpg HTTP/1.1" 304 0
+[16/Jul/2020 11:01:22] "GET /static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:22] "GET /static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:22] "GET /static/ckeditor/ckeditor/plugins/codesnippet/lang/en.js?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:23] "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:23] "GET /static/ckeditor/ckeditor/plugins/dialog/styles/dialog.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:23] "GET /static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css HTTP/1.1" 200 1513
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css?t=JB9C HTTP/1.1" 304 0
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js HTTP/1.1" 304 0
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 304 0
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css HTTP/1.1" 200 1145
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/skins/moono-lisa/icons.png?t=411985373e HTTP/1.1" 304 0
+[16/Jul/2020 11:01:24] "GET /static/ckeditor/ckeditor/plugins/codesnippet/icons/codesnippet.png?t=JB9C HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+July 16, 2020 - 11:01:10
+Django version 3.0.7, using settings 'blogproject.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<ul>
+<li>列表项1</li>
+<li>列表项2</li>
+<li>列表项3</li>
+</ul>
+<blockquote>
+<p>这是一段引用</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">pk</span><span class="p">):</span>
+    <span class="n">post</span> <span class="o">=</span> <span class="n">get_object_or_404</span><span class="p">(</span><span class="n">Post</span><span class="p">,</span> <span class="n">pk</span><span class="o">=</span><span class="n">pk</span><span class="p">)</span>
+    <span class="n">post</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">markdown</span><span class="o">.</span><span class="n">markdown</span><span class="p">(</span><span class="n">post</span><span class="o">.</span><span class="n">body</span><span class="p">,</span>
+                                  <span class="n">extensions</span><span class="o">=</span><span class="p">[</span>
+                                      <span class="s1">&#39;markdown.extensions.extra&#39;</span><span class="p">,</span>
+                                      <span class="s1">&#39;markdown.extensions.codehilite&#39;</span><span class="p">,</span>
+                                      <span class="s1">&#39;markdown.extensions.toc&#39;</span><span class="p">,</span>
+                                  <span class="p">])</span>
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;blog/detail.html&#39;</span><span class="p">,</span> <span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;post&#39;</span><span class="p">:</span> <span class="n">post</span><span class="p">})</span>
+</code></pre></div>
+
+
+<h1 id="表格">表格</h1>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
