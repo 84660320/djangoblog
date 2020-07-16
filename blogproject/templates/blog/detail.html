@@ -33,23 +33,60 @@
 
 <!-- 
 <link rel="stylesheet" href="/static/css/github.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
 -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css" 
+<link href="/static/css/github.min.css" rel="stylesheet">
+<style>
+    .codehilite {
+      padding: 0;
+    }
+
+    /* for block of numbers */
+    .hljs-ln-numbers {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+
+      text-align: center;
+      color: #ccc;
+      border-right: 1px solid #CCC;
+      vertical-align: top;
+      padding-right: 5px;
+    }
+
+    .hljs-ln-n {
+      width: 30px;
+    }
+
+    /* for block of code */
+    .hljs-ln .hljs-ln-code {
+      padding-left: 10px;
+      white-space: pre;
+    }
+</style>
 
 <section class="site-section">
     <div class="container">
         <div class="row">
             <div class="content col-lg-8">
                 <div class="single-page clearfix">
+                    {% if post.media %}
                     <div class="blog-media">
                         <img src="{{ post.media }}" alt="" class="img-fluid">
                     </div>
                     <!-- end blog-media -->
+                    {% endif %}
                     <div class="blog-desc text-center">
                         <span class="cat-title">{{ post.category.name }}</span>
                         <h4>{{ post.title }}</h4>
                         <div class="blog-meta">
-                            <span>Posted on</span> {{ post.created_time }} &nbsp;-&nbsp;<span>By</span> <a href="#">{{ post.author }}</a>&nbsp;-&nbsp;<a href="#">{{ post.comment_set.count }} Comments</a>
+                            <span>发表于</span> {{ post.created_time }}
+                            <span>分类于</span> <a href="{% url 'blog:category' post.category.pk %}"> {{ post.category.name }} </a>&nbsp;-&nbsp;
+                            <span>阅读次数</span> {{ post.views }} &nbsp;-&nbsp; 
+                            <span>评论</span> {{ post.comment_set.count }}
                         </div>
                         <!-- end meta -->
                     </div>
@@ -59,7 +96,6 @@
                     </div>
 
                     <hr class="dashedhr">
-                    <!-- hr class="dashedhr"-->
 
                     <div class="row">
                         <div class="col-md-12">
@@ -82,18 +118,20 @@
                     </div><!-- end widget-title -->
                     {{ post.toc|safe }}
                 </div><!-- end widget -->
-                <!--
-                { % show_advertise %}
-                { % show_instagram %}
-                -->
                 {% show_categories %}
                 {% show_recent_posts 5 %}
                 {% show_tags %}
+                {% show_advertise %}
+                {% show_instagram %}
             </div><!-- end sidebar -->
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end section -->
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
 {% endblock content %}

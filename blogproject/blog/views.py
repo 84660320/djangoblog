@@ -7,7 +7,7 @@ import markdown
 from .models import Category, Post, Tag
 from django.utils.text import slugify
 from markdown.extensions.toc import TocExtension
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, View
 from comments.forms import CommentForm
 from pure_pagination.mixins import PaginationMixin
 from django.contrib import messages
@@ -19,20 +19,20 @@ class HomeView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
 
 class BlogView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/blog.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
     #http_method_names = ['get', 'post', 'put', 'patch', 'delete', 'head', 'options', 'trace']
 
 class IndexView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
 
 
 # 记得在顶部导入 DetailView
@@ -91,7 +91,7 @@ class ArchivesView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
 
     def get_queryset(self):
         year = self.kwargs.get('year')
@@ -108,7 +108,7 @@ class CategoryView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
 
     def get_queryset(self):
         cate = get_object_or_404(Category, pk=self.kwargs.get('pk'))
@@ -135,7 +135,7 @@ class BlogCategoryView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/category1.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
     #http_method_names = ['get', 'post', 'put', 'patch', 'delete', 'head', 'options', 'trace']
     def get(self, request, tag=None, *args, **kwargs):
         if tag:
@@ -181,8 +181,15 @@ class SearchView(PaginationMixin, ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 5
+    paginate_by = 6
 
     def get_queryset(self):
         q = self.request.GET.get('q')
         return super(SearchView, self).get_queryset().filter(Q(title__icontains=q) | Q(body__icontains=q))
+
+class IncreaseLikesView(View):
+    def post(self, request, *args, **kwargs):
+        article = ArticlePost.objects.get(id=kwargs.get('id'))
+        article.likes += 1
+        article.save()
+        return HttpResponse('success')

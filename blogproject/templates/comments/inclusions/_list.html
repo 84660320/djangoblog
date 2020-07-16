@@ -11,7 +11,7 @@
             {% if comment.media %}
             <img src="{{ coment.media }}" alt="" class="rounded-circle">
             {% else %} 
-            <img src="/static/images/people_12.jpg" alt="" class="rounded-circle">
+            <img style="hight:30%;" src="/static/images/people_12.jpg" alt="" class="rounded-circle">
             {% endif %}
             </a>
             <div class="media-body">
@@ -20,7 +20,7 @@
                     {{ comment.text|safe }}
                 </div>
                 <br>
-                <a href="#" class="btn btn-primary btn-sm">Reply</a>
+                <a href="javascript:;" class="btn btn-primary btn-sm">Reply</a>
             </div>
         </div>
         {% endfor %}

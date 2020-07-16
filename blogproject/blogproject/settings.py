@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'droc(p(qyv770_+&v7tqs@7u3$b9r_tuadi&7hpl)pay1v4m!c'
+SECRET_KEY = 'droc(p(qyv770_+&v7tqs@7ua3$b9r_tuadi&7hpl)pay1v4m!c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
     # allauth 启动必须项
     'django.contrib.sites',
+    #'django_comments',
 
     'allauth',
     'allauth.account',

@@ -33,10 +33,12 @@
                     <!-- end blog-media -->
                     {% endif %}
                     <div class="blog-desc text-center">
-                        <span class="cat-title">{{ post.category.name }}</span>
                         <h4><a href="{{ post.get_absolute_url }}" title="">{{ post.title }}</a></h4>
                         <div class="blog-meta">
-                            <span>Posted on</span> {{ post.created_time }} &nbsp;-&nbsp;<span>By</span> <a href="#">{{ post.author }}</a>&nbsp;-&nbsp;<a href="#">{{ post.comment_set.count }} Comments</a>
+                            <span>发表于</span> {{ post.created_time }}
+                            <span>分类于</span><a href="{% url 'blog:category' post.category.pk %}"> {{ post.category.name }} </a>&nbsp;-&nbsp;
+                            <span>阅读次数</span> {{ post.views }} &nbsp;-&nbsp; 
+                            <span>评论</span> {{ post.comment_set.count }}
                         </div>
                         <!-- end meta -->
                         <p>{{ post.excerpt }}...</p>

@@ -11,6 +11,7 @@ from markdown.extensions.toc import TocExtension
 from django.utils.text import slugify
 from django.utils.functional import cached_property
 #from django.utils.six import python_2_unicode_compatible
+from ckeditor.fields import RichTextField
 
 class Category(models.Model):
     """
@@ -50,7 +51,7 @@ class Post(models.Model):
     # 文章正文，我们使用了 TextField。
     # 存储比较短的字符串可以使用 CharField，但对于文章的正文来说可能会是一大段文本，因此使用 TextField 来存储大段文本。
     body = models.TextField()
-
+    #body = RichTextField()
     # 这两个列分别表示文章的创建时间和最后一次修改时间，存储时间的字段用 DateTimeField 类型。
     created_time = models.DateTimeField()
     modified_time = models.DateTimeField()
@@ -75,6 +76,9 @@ class Post(models.Model):
     # 这里我们通过 ForeignKey 把文章和 User 关联了起来。
     # 因为我们规定一篇文章只能有一个作者，而一个作者可能会写多篇文章，因此这是一对多的关联关系，和 Category 类似。
     author = models.ForeignKey(User,  on_delete=models.CASCADE)
+
+    # 点赞功能
+    likes = models.PositiveIntegerField(default=0)
 
     # 新增 views 字段记录阅读量
     views = models.PositiveIntegerField(default=0)
